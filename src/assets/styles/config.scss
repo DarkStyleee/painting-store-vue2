@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+@import "variables.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+svg {
+  box-sizing: content-box;
+}
+
+html {
+  font-family: 'Merriweather', serif;
+  font-size: $fs-default;
+  line-height: $lh-default;
+  font-weight: $fw-regular;
+}
+
+button, input, select, textarea {
+  font-family: 'Merriweather', serif;
+  font-size: $fs-default;
+  line-height: $lh-default;
+  font-weight: $fw-regular;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: $btn-bg-color-default;
+  color: $btn-text-color-default;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 1rem;
+  color: $text-color-default;
+  background-color: $bg-color-default;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  border-bottom: thin solid $header-border-color-default;
+  min-height: 97px;
+  font-size: $fs-small;
+}
+
+.main-content {
+  flex: 1 0 auto;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  color: $footer-text-color-default;
+  background-color: $footer-bg-color-default;
+  min-height: 96px;
+  font-size: $fs-small;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color-default;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: $fw-bold;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: $fw-regular;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: $fw-bold;
+}
+
+h4 {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: $fw-bold;
+}
+
+h5 {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: $fw-regular;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: $fw-light;
+}
